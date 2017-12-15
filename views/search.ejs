@@ -1,0 +1,23 @@
+<% include header%>
+<div class="container">
+    <table class="table table-bordered table-hover text-center">
+        <tr class="active ">
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>联系方式</th>
+            <th>邮箱</th>
+            <th>时间</th>
+        </tr>
+
+        <% for(var i = 0; i < doc.length; i++){%>
+        <tr>
+            <td><%= doc[i].name %></td>
+            <td><%= doc[i].age %></td>
+            <td><%= doc[i].phone %></td>
+            <td><%= doc[i].email %></td>
+            <td><%= doc[i].time %></td>
+        </tr>
+        <%}%>
+    </table>
+</div>
+<% include footer%>

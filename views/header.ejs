@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel="stylesheet" type="text/css" href="stylesheets/register-login.css">
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="navbar-fixed-top">
+    <div class="container">
+            <h3 class="nav">信息管理系统&nbsp;</h3>
+            <h3 class="nav"><%= title %></h3>
+            <ul class="nav nav-pills">
+
+                <li><a href="/"> 首页 </a></li>
+                <% if(user){ %>
+                <li><a href="/">欢迎您：<%= user.name %></a></li>
+                <li><a href="/logout">退出</a></li>
+                <%}else{ %>
+                <li><a href="/login">登录</a></li>
+                <li><a href="/reg">注册</a></li>
+                <% } %>
+            </ul>
+    </div>
+</header>
+
+<article>
+    <% if (success) { %>
+    <div><%= success %></div>
+    <% } %>
+    <% if (error) { %>
+    <div><%= error %> </div>
+    <% } %>
+    <!--<span class="delAll  btn-info">hhhhhhh</span>-->
+</article>

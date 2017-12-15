@@ -1,0 +1,44 @@
+/*通用样式*/
+body{
+  padding-top: 50px;
+}
+header{
+  background-color: lightgray;
+  /*height: 60px;*/
+  margin-bottom: 15px;
+
+}
+header h3{
+  float: left;
+  position: relative;
+    top: -10px;
+}
+header ul{
+  float: right;
+}
+h1{
+  font-size: 2.2rem;
+}
+#toolbar{
+  margin: 10px auto;
+}
+th{
+  text-align: center;
+}
+td span{
+  cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+#toolbar{
+  display: flex;
+
+}
+.jumbotron{
+  background-image: url("/timg.jpg");
+  /*background-size: 50%;*/
+  /*height: 800px;*/
+}
+.prepage a{float:left;text-decoration:none;padding:.5em 1em;color:#8c8c8c;font-weight:bold;}
+.nextpage a{float:right;text-decoration:none;padding:.5em 1em;color:#8c8c8c;font-weight:bold;}
